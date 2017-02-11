@@ -81045,18 +81045,18 @@ var __decorate$109 = (undefined && undefined.__decorate) || function (decorators
 var __metadata$2 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var HomePage = (function () {
-    function HomePage(navCtrl) {
+var AboutPage = (function () {
+    function AboutPage(navCtrl) {
         this.navCtrl = navCtrl;
     }
-    return HomePage;
+    return AboutPage;
 }());
-HomePage = __decorate$109([
+AboutPage = __decorate$109([
     Component({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/heqiang/WebstormProjects/myGitHub/ionic2-demo/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h2>Welcome to Ionic!</h2>\n  <p>\n    This starter project comes with simple tabs-based layout for apps\n    that are going to primarily use a Tabbed UI.\n  </p>\n  <p>\n    Take a look at the <code>src/pages/</code> directory to add or change tabs,\n    update any existing page or create new pages.\n  </p>\n</ion-content>\n'/*ion-inline-end:"/Users/heqiang/WebstormProjects/myGitHub/ionic2-demo/src/pages/home/home.html"*/
+        selector: 'page-about',template:/*ion-inline-start:"/Users/heqiang/WebstormProjects/myGitHub/ionic2-demo/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/heqiang/WebstormProjects/myGitHub/ionic2-demo/src/pages/about/about.html"*/
     }),
     __metadata$2("design:paramtypes", [NavController])
-], HomePage);
+], AboutPage);
 
 var __decorate$110 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -81067,18 +81067,18 @@ var __decorate$110 = (undefined && undefined.__decorate) || function (decorators
 var __metadata$3 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var AboutPage = (function () {
-    function AboutPage(navCtrl) {
+var ContactPage = (function () {
+    function ContactPage(navCtrl) {
         this.navCtrl = navCtrl;
     }
-    return AboutPage;
+    return ContactPage;
 }());
-AboutPage = __decorate$110([
+ContactPage = __decorate$110([
     Component({
-        selector: 'page-about',template:/*ion-inline-start:"/Users/heqiang/WebstormProjects/myGitHub/ionic2-demo/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/heqiang/WebstormProjects/myGitHub/ionic2-demo/src/pages/about/about.html"*/
+        selector: 'page-contact',template:/*ion-inline-start:"/Users/heqiang/WebstormProjects/myGitHub/ionic2-demo/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-left></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/heqiang/WebstormProjects/myGitHub/ionic2-demo/src/pages/contact/contact.html"*/
     }),
     __metadata$3("design:paramtypes", [NavController])
-], AboutPage);
+], ContactPage);
 
 var __decorate$111 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -81089,18 +81089,163 @@ var __decorate$111 = (undefined && undefined.__decorate) || function (decorators
 var __metadata$4 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var ContactPage = (function () {
-    function ContactPage(navCtrl) {
+/*
+ Generated class for the Echarts page.
+
+ See http://ionicframework.com/docs/v2/components/#navigation for more info on
+ Ionic pages and navigation.
+ */
+var EchartsPage = (function () {
+    function EchartsPage(navCtrl) {
         this.navCtrl = navCtrl;
     }
-    return ContactPage;
+    EchartsPage.prototype.ionViewDidLoad = function () {
+        console.log('Hello Echarts Page');
+        this.chartInit();
+    };
+    //初始化图表
+    EchartsPage.prototype.chartInit = function () {
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(this.chart.nativeElement);
+        var option = {
+            title: {
+                text: 'ECharts 入门示例'
+            },
+            tooltip: {},
+            legend: {
+                data: ['销量']
+            },
+            xAxis: {
+                data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"]
+            },
+            yAxis: {},
+            series: [{
+                    name: '销量',
+                    type: 'bar',
+                    data: [5, 20, 36, 10, 10, 20]
+                }]
+        };
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    };
+    return EchartsPage;
 }());
-ContactPage = __decorate$111([
+__decorate$111([
+    ViewChild('chart'),
+    __metadata$4("design:type", ElementRef)
+], EchartsPage.prototype, "chart", void 0);
+EchartsPage = __decorate$111([
     Component({
-        selector: 'page-contact',template:/*ion-inline-start:"/Users/heqiang/WebstormProjects/myGitHub/ionic2-demo/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-left></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/heqiang/WebstormProjects/myGitHub/ionic2-demo/src/pages/contact/contact.html"*/
+        selector: 'page-echarts',template:/*ion-inline-start:"/Users/heqiang/WebstormProjects/myGitHub/ionic2-demo/src/pages/echarts/echarts.html"*/'<!--\n  Generated template for the Echarts page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar>\n        <ion-title>echarts</ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->\n    <div #chart style="width:100%;height:400px;"></div>\n</ion-content>\n'/*ion-inline-end:"/Users/heqiang/WebstormProjects/myGitHub/ionic2-demo/src/pages/echarts/echarts.html"*/
     }),
     __metadata$4("design:paramtypes", [NavController])
-], ContactPage);
+], EchartsPage);
+
+var __decorate$112 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$5 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+/*
+ Generated class for the D3 page.
+
+ See http://ionicframework.com/docs/v2/components/#navigation for more info on
+ Ionic pages and navigation.
+ */
+var D3Page = (function () {
+    function D3Page(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    D3Page.prototype.ionViewDidLoad = function () {
+        console.log('Hello D3 Page');
+        this.svgInit();
+    };
+    //初始化SVG
+    D3Page.prototype.svgInit = function () {
+        var svg = d3.select("#d3").append("svg"), width = +svg.attr("width");
+        var format = d3.format(",d");
+        var color = d3.scaleOrdinal(d3.schemeCategory20c);
+        var pack = d3.pack()
+            .size([width, width])
+            .padding(1.5);
+        d3.csv("assets/flare.csv", function (d) {
+            d.value = +d.value;
+            if (d.value)
+                return d;
+        }, function (error, classes) {
+            if (error)
+                throw error;
+            var root = d3.hierarchy({ children: classes })
+                .sum(function (d) {
+                return d.value;
+            })
+                .each(function (d) {
+                if (id = d.data.id) {
+                    var id, i = id.lastIndexOf(".");
+                    d.id = id;
+                    d.package = id.slice(0, i);
+                    d.class = id.slice(i + 1);
+                }
+            });
+            var node = svg.selectAll(".node")
+                .data(pack(root).leaves())
+                .enter().append("g")
+                .attr("class", "node")
+                .attr("transform", function (d) {
+                return "translate(" + d.x + "," + d.y + ")";
+            });
+            node.append("circle")
+                .attr("id", function (d) {
+                return d.id;
+            })
+                .attr("r", function (d) {
+                return d.r;
+            })
+                .style("fill", function (d) {
+                return color(d.package);
+            });
+            node.append("clipPath")
+                .attr("id", function (d) {
+                return "clip-" + d.id;
+            })
+                .append("use")
+                .attr("xlink:href", function (d) {
+                return "#" + d.id;
+            });
+            node.append("text")
+                .attr("clip-path", function (d) {
+                return "url(#clip-" + d.id + ")";
+            })
+                .selectAll("tspan")
+                .data(function (d) {
+                return d.class.split(/(?=[A-Z][^A-Z])/g);
+            })
+                .enter().append("tspan")
+                .attr("x", 0)
+                .attr("y", function (d, i, nodes) {
+                return 13 + (i - nodes.length / 2 - 0.5) * 10;
+            })
+                .text(function (d) {
+                return d;
+            });
+            node.append("title")
+                .text(function (d) {
+                return d.id + "\n" + format(d.value);
+            });
+        });
+    };
+    return D3Page;
+}());
+D3Page = __decorate$112([
+    Component({
+        selector: 'page-d3',template:/*ion-inline-start:"/Users/heqiang/WebstormProjects/myGitHub/ionic2-demo/src/pages/d3/d3.html"*/'<!--\n  Generated template for the D3 page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar>\n        <ion-title>d3</ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <div id="d3">\n    </div>\n</ion-content>\n'/*ion-inline-end:"/Users/heqiang/WebstormProjects/myGitHub/ionic2-demo/src/pages/d3/d3.html"*/
+    }),
+    __metadata$5("design:paramtypes", [NavController])
+], D3Page);
 
 var __decorate$108 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -81115,14 +81260,15 @@ var TabsPage = (function () {
     function TabsPage() {
         // this tells the tabs component which Pages
         // should be each tab's root Page
-        this.tab1Root = HomePage;
+        this.tab1Root = D3Page;
         this.tab2Root = AboutPage;
         this.tab3Root = ContactPage;
+        this.tab4Root = EchartsPage;
     }
     return TabsPage;
 }());
 TabsPage = __decorate$108([
-    Component({template:/*ion-inline-start:"/Users/heqiang/WebstormProjects/myGitHub/ionic2-demo/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/heqiang/WebstormProjects/myGitHub/ionic2-demo/src/pages/tabs/tabs.html"*/
+    Component({template:/*ion-inline-start:"/Users/heqiang/WebstormProjects/myGitHub/ionic2-demo/src/pages/tabs/tabs.html"*/'<ion-tabs>\n    <ion-tab [root]="tab1Root" tabTitle="D3" tabIcon="home"></ion-tab>\n    <ion-tab [root]="tab2Root" tabTitle="Iframe" tabIcon="information-circle"></ion-tab>\n    <!--<ion-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>-->\n    <ion-tab [root]="tab4Root" tabTitle="Echarts" tabIcon="contrast"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/heqiang/WebstormProjects/myGitHub/ionic2-demo/src/pages/tabs/tabs.html"*/
     }),
     __metadata$1("design:paramtypes", [])
 ], TabsPage);
@@ -81155,6 +81301,28 @@ MyApp = __decorate$1([
     __metadata("design:paramtypes", [Platform])
 ], MyApp);
 
+var __decorate$113 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$6 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var HomePage = (function () {
+    function HomePage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    return HomePage;
+}());
+HomePage = __decorate$113([
+    Component({
+        selector: 'page-home',template:/*ion-inline-start:"/Users/heqiang/WebstormProjects/myGitHub/ionic2-demo/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h2>Welcome to Ionic!</h2>\n  <p>\n    This starter project comes with simple tabs-based layout for apps\n    that are going to primarily use a Tabbed UI.\n  </p>\n  <p>\n    Take a look at the <code>src/pages/</code> directory to add or change tabs,\n    update any existing page or create new pages.\n  </p>\n</ion-content>\n'/*ion-inline-end:"/Users/heqiang/WebstormProjects/myGitHub/ionic2-demo/src/pages/home/home.html"*/
+    }),
+    __metadata$6("design:paramtypes", [NavController])
+], HomePage);
+
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -81173,7 +81341,9 @@ AppModule = __decorate([
             AboutPage,
             ContactPage,
             HomePage,
-            TabsPage
+            TabsPage,
+            EchartsPage,
+            D3Page
         ],
         imports: [
             IonicModule.forRoot(MyApp)
@@ -81184,7 +81354,9 @@ AppModule = __decorate([
             AboutPage,
             ContactPage,
             HomePage,
-            TabsPage
+            TabsPage,
+            EchartsPage,
+            D3Page
         ],
         providers: []
     })
