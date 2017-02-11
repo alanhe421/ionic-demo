@@ -24,19 +24,36 @@ ionic run andorid --prod //真机调试-产品包
 
 
 ##学习推荐
-http://ionicframework.com/docs/v2/
+
++ http://ionicframework.com/docs/v2/
++ https://angular.io/docs/ts/latest/
 
 ##FAQ
 
 + 锁定屏幕方向
 
 ```
-<preference name="orientation" value="portrait" />  //config.xml
-
+# config.xml
+<preference name="orientation" value="portrait" />
 ```
 
 + app显示名称
 
 ```
-<name>appName</name> //config.xml
+# config.xml
+<name>appName</name>
+```
+
++ echarts引入
+
+```
+# index页面引入js资源文件
+# page组件 declare let echarts; 
+
+```
++ d3引入
+
+```
+
+
 ```
