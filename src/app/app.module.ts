@@ -8,6 +8,7 @@ import {TabsPage} from '../pages/tabs/tabs';
 import {EchartsPage} from "../pages/echarts/echarts";
 import {D3Page} from "../pages/d3/d3";
 import {IframePage} from "../pages/iframe/iframe";
+import {UtilService} from "../providers/util.service";
 
 @NgModule({
     declarations: [
@@ -18,7 +19,8 @@ import {IframePage} from "../pages/iframe/iframe";
         TabsPage,
         EchartsPage,
         D3Page,
-        IframePage
+        IframePage,
+
     ],
     imports: [
         IonicModule.forRoot(MyApp)
@@ -34,7 +36,7 @@ import {IframePage} from "../pages/iframe/iframe";
         D3Page,
         IframePage
     ],
-    providers: []
+    providers: [UtilService]
 })
 export class AppModule {
 }

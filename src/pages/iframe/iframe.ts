@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
+import {UtilService} from "../../providers/util.service";
 
 /*
  Generated class for the Iframe page.
@@ -13,7 +14,13 @@ import {NavController} from 'ionic-angular';
 })
 export class IframePage {
 
-    constructor(public navCtrl: NavController) {
+    heigth: number;
+    width: number;
+
+    constructor(public navCtrl: NavController, private utilService: UtilService) {
+        let device = this.utilService.device;
+        this.heigth = device.height;
+        this.width = device.width;
     }
 
     ionViewDidLoad() {
