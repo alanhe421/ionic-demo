@@ -27,4 +27,7 @@ export class IframePage {
         console.log('Hello Iframe Page');
     }
 
+    ionViewWillLeave() {
+
+    }
 }
