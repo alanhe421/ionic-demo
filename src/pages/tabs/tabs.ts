@@ -1,7 +1,4 @@
-import {Component} from '@angular/core';
-
-import {AboutPage} from '../about/about';
-import {ContactPage} from '../contact/contact';
+import {Component} from "@angular/core";
 import {EchartsPage} from "../echarts/echarts";
 import {D3Page} from "../d3/d3";
 import {IframePage} from "../iframe/iframe";
