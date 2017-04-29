@@ -1,62 +1,17 @@
-#ionic2-demo
+# ionic2-demo
 
-纯粹手痒，写一下常用到的一些功能点，愿能帮到一些人。
-水平有限，欢迎提Issue，PR
+ionic在跨平台开发中占有一席之地，
+由于之前有了相对扎实的ng基础，所以这里把ionic好好完了把，做了个这个demo，将常用到的一些功能点融于项目中，同时对常见的问题一一整理放在issue中
+相信能够帮助一些人
 
-##涉及技术点
+## 说明
 
-+ 视图导航系统
-+ D3引入
-+ Echarts引入
-+ Iframe包含第三方网站
-+ 登录系统
-+ 前后端交互
+ + 水平有限
+ + 问题查Issue,无，请添加issue,我会及时解答
+ + 有回答的issue，在项目代码中可以找到具体的应用，当然有时会有延迟，因为实在很忙，敬请见谅
 
+## ionic做APP行不行
 
-##Project Init
-
-```
-
-ionic serve //浏览器调试
-ionic build android //安卓打包
-ionic build ios //ios打包
-ionic run android //真机调试-开发版
-ionic run andorid --prod //真机调试-产品包
-
-```
-
-
-##学习推荐
-
-+ http://ionicframework.com/docs/v2/
-+ https://angular.io/docs/ts/latest/
-
-##FAQ
-
-+ 锁定屏幕方向
-
-```
-# config.xml
-<preference name="orientation" value="portrait" />
-```
-
-+ app显示名称
-
-```
-# config.xml
-<name>appName</name>
-```
-
-+ echarts引入
-
-```
-# index页面引入js资源文件
-# page组件 declare let echarts; 
-
-```
-+ d3引入
-
-```
-
-
-```
++ 没有最好的，只有最合适的，ionic这种跨平台开，让web开发人员具备了开发APP的能力，另外对于一些企业的一些项目，提供了最快捷，最有效，最经济的解决方案。
++ hybrid开发，从机理上来说，存在性能问题，但是随着用户手机设备的性能在提升，本身的ionic这种技术不断的优化，所以如果项目开发周期短，另外APP本身简单的话，使用ionic,`没问题的`
++ ionic经历了这几年，成熟了，现在推出的ionic2,最新版本是V3.1，经我使用，觉得进步还是很大的，体验不错
