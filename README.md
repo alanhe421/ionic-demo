@@ -1,13 +1,12 @@
 # ionic2-demo
 
-ionic在跨平台开发中占有一席之地，
-由于之前有了相对扎实的ng基础，所以这里把ionic好好完了把，做了个这个demo，将常用到的一些功能点融于项目中，同时对常见的问题一一整理放在issue中
+ionic在跨平台开发中占有一席之地，闲暇之余，这里把ionic好好玩了把，做了这个demo，将常用到的一些功能点融于项目中，同时对常见的问题一一整理放在issue中
 相信能够帮助一些人
 
 ## 说明
 
  + 水平有限
- + 问题查[Issue](https://github.com/heqiang421/ionic2-demo/issues),无，请添加[issue](https://github.com/heqiang421/ionic2-demo/issues/new),我会及时解答
+ + 问题[查Issues](https://github.com/heqiang421/ionic2-demo/issues),无，请[添加issue](https://github.com/heqiang421/ionic2-demo/issues/new),我会及时解答
  + 有回答的issue，在项目代码中可以找到具体的应用，当然有时会有延迟，因为实在很忙，敬请见谅
 
 ## ionic做APP行不行
