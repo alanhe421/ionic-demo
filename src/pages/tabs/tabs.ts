@@ -10,10 +10,10 @@ import {MorePage} from "../more/more";
 export class TabsPage {
     // this tells the tabs component which Pages
     // should be each tab's root Page
-    tab1Root: any = D3Page;
-    tab2Root: any = IframePage;
-    tab3Root: any = EchartsPage;
-    tab4Root: any = MorePage;
+    tab1Root = D3Page;
+    tab2Root = IframePage;
+    tab3Root = EchartsPage;
+    tab4Root = MorePage;
 
     constructor() {
 
