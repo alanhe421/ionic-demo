@@ -5,11 +5,12 @@ import {StatusBar} from "@ionic-native/status-bar";
 import {SplashScreen} from "@ionic-native/splash-screen";
 import {EchartsPage} from "../pages/echarts/echarts";
 import {D3Page} from "../pages/d3/d3";
+import {IframePage} from "../pages/iframe/iframe";
 @Component({
     templateUrl: `app.component.html`
 })
 export class MyApp {
-    rootPage = EchartsPage;
+    rootPage = D3Page;
     pages: Array<{title: string, component: any}>;
     @ViewChild(Nav) nav: Nav;
 
@@ -24,7 +25,9 @@ export class MyApp {
         this.utilService.device.height = platform.height();
         this.pages = [
             {title: 'echarts', component: EchartsPage},
-            {title: 'd3', component: D3Page}
+            {title: 'd3', component: D3Page},
+            {title: 'iframe', component: IframePage},
+
         ];
     }
 
