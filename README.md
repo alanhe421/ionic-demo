@@ -17,7 +17,7 @@ ionic在跨平台开发中占有一席之地，闲暇之余，这里把ionic好�
 
 ## 还有ionicv4？
 
-ionic官方仓库已经创建了v4分支，也给出了v4的介绍及愿景，这里我翻一下，想看原文(点击这里)[https://github.com/driftyco/ionic/blob/v4/README.md]
+ionic官方仓库已经创建了v4分支，也给出了v4的介绍及愿景，这里我翻一下，想看原文[点击这里](https://github.com/driftyco/ionic/blob/v4/README.md)
 
 ## 翻译
 
