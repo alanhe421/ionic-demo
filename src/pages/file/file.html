@@ -13,10 +13,9 @@
     </ion-navbar>
 </ion-header>
 
-
 <ion-content padding>
-    <button ion-button full>读文件</button>
-    <button ion-button full color="danger">写文件</button>
+    <button ion-button full (click)="readFile()">读文件</button>
+    <button ion-button full color="danger" (click)="writeToFile()">写文件</button>
 
     <ion-textarea placeholder="Enter a description" style="background-color: #ccc;
     height: 10rem;" [(ngModel)]="inputTxt">
@@ -24,6 +23,18 @@
     </ion-textarea>
     <strong>
         <ion-icon name="information-circle"></ion-icon>
-        富文本框输入的文本，将会写入到已经存在的文本文件中去
+        上面富文本框输入的文本，将会写入到已经存在的文本文件中去
     </strong>
+
+    <ion-card>
+
+        <ion-card-header>
+            读取文件中内容如下
+        </ion-card-header>
+
+        <ion-card-content>
+            {{fileCnt}}
+        </ion-card-content>
+
+    </ion-card>
 </ion-content>

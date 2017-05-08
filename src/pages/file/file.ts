@@ -1,5 +1,4 @@
 import {Component} from "@angular/core";
-import {NavController, NavParams} from "ionic-angular";
 import {File} from "@ionic-native/file";
 
 /**
@@ -18,19 +17,25 @@ export class FilePage {
 
     inputTxt: string;
 
-    constructor(public navCtrl: NavController, public navParams: NavParams, private file: File) {
+    fileDir: string;
+    fileCnt: string;
+
+    constructor(private file: File) {
+        this.fileDir = this.file.applicationDirectory;
     }
 
     ionViewDidLoad() {
         console.log('ionViewDidLoad File');
-
+        console.log(this.fileDir);
+        this.file.createFile(this.fileDir, this.fileName, true);
     }
 
     //读取文本文件
     readFile() {
-        this.file.readAsText(this.file.dataDirectory, 'mydir').then((text) =>
-            console.log(text)).catch(err => console.log(err.toString()));
-
+        this.file.readAsText(this.file.dataDirectory, this.fileName).then((text) => {
+            console.log(text);
+            this.fileCnt = text;
+        }).catch(err => console.log(err));
     }
 
     /**
