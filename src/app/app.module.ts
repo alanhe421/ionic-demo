@@ -14,7 +14,8 @@ import {HttpModule} from "@angular/http";
 import {BrowserModule} from "@angular/platform-browser";
 import {StatusBar} from "@ionic-native/status-bar";
 import {SplashScreen} from "@ionic-native/splash-screen";
-import {NfcPage} from "../pages/nfc/nfc";
+import {File} from "@ionic-native/file";
+import {FilePage} from "../pages/file/file";
 
 @NgModule({
     declarations: [
@@ -26,8 +27,8 @@ import {NfcPage} from "../pages/nfc/nfc";
         EchartsPage,
         D3Page,
         IframePage,
+        FilePage,
         MorePage,
-        NfcPage
     ],
     imports: [
         BrowserModule,
@@ -45,9 +46,9 @@ import {NfcPage} from "../pages/nfc/nfc";
         D3Page,
         IframePage,
         MorePage,
-        NfcPage
+        FilePage
     ],
-    providers: [SplashScreen, StatusBar, UtilService]
+    providers: [SplashScreen, StatusBar, File, UtilService]
 })
 export class AppModule {
 }

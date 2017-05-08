@@ -6,11 +6,14 @@ import {SplashScreen} from "@ionic-native/splash-screen";
 import {EchartsPage} from "../pages/echarts/echarts";
 import {D3Page} from "../pages/d3/d3";
 import {IframePage} from "../pages/iframe/iframe";
+import {ContactPage} from "../pages/contact/contact";
+import {FilePage} from "../pages/file/file";
+
 @Component({
     templateUrl: `app.component.html`
 })
 export class MyApp {
-    rootPage = D3Page;
+    rootPage = FilePage;
     pages: Array<{title: string, component: any}>;
     @ViewChild(Nav) nav: Nav;
 
@@ -27,7 +30,8 @@ export class MyApp {
             {title: 'echarts', component: EchartsPage},
             {title: 'd3', component: D3Page},
             {title: 'iframe', component: IframePage},
-
+            {title: 'file', component: FilePage},
+            {title: 'test', component: ContactPage},
         ];
     }
 
