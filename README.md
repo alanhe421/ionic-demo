@@ -15,6 +15,11 @@ npm i
 # 浏览器运行
 ionic serve
 
+# 添加平台
+ionic platform add android
+
+# 真机运行
+ionic run android
 
 ```
 
