@@ -3,6 +3,23 @@
 ionic在跨平台开发中占有一席之地，闲暇之余，这里把ionic好好玩了把，做了这个demo，将常用到的一些功能点融于项目中，同时对常见的问题一一整理放在issue中
 相信能够帮助一些人
 
+## Quick start
+
+```
+# 安装cordova ,ts,ionic
+npm i -g typescript
+npm i -g cordova
+npm i -g ionic
+
+# 安装项目包
+npm i
+
+# 浏览器运行
+ionic serve
+
+
+```
+
 ## 说明
 
  + 水平有限
