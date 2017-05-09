@@ -7,9 +7,7 @@ ionic在跨平台开发中占有一席之地，闲暇之余，这里把ionic好�
 
 ```
 # 安装cordova ,ts,ionic
-npm i -g typescript
-npm i -g cordova
-npm i -g ionic
+npm i -g typescript cordova ionic
 
 # 安装项目包
 npm i
