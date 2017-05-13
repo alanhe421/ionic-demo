@@ -16,7 +16,8 @@ import {StatusBar} from "@ionic-native/status-bar";
 import {SplashScreen} from "@ionic-native/splash-screen";
 import {File} from "@ionic-native/file";
 import {FilePage} from "../pages/file/file";
-
+import {NFC, Ndef} from "@ionic-native/nfc";
+import {NfcPageModule} from "../pages/nfc/nfc.module";
 @NgModule({
     declarations: [
         MyApp,
@@ -33,7 +34,8 @@ import {FilePage} from "../pages/file/file";
     imports: [
         BrowserModule,
         HttpModule,
-        IonicModule.forRoot(MyApp)
+        IonicModule.forRoot(MyApp),
+        NfcPageModule
     ],
     bootstrap: [IonicApp],
     entryComponents: [
@@ -48,7 +50,7 @@ import {FilePage} from "../pages/file/file";
         MorePage,
         FilePage
     ],
-    providers: [SplashScreen, StatusBar, File, UtilService]
+    providers: [SplashScreen, StatusBar, File, NFC, Ndef, UtilService]
 })
 export class AppModule {
 }

@@ -21,7 +21,7 @@ export class ContactPage {
                 this.navCtrl.push(EchartsPage);
             }
             console.log('hello' + this.t);
-        }, 1000)
+        }, 1000 * 60)
 
     }
 

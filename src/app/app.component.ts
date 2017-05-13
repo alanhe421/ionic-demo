@@ -8,12 +8,13 @@ import {D3Page} from "../pages/d3/d3";
 import {IframePage} from "../pages/iframe/iframe";
 import {ContactPage} from "../pages/contact/contact";
 import {FilePage} from "../pages/file/file";
+import {NfcPage} from "../pages/nfc/nfc";
 
 @Component({
     templateUrl: `app.component.html`
 })
 export class MyApp {
-    rootPage = FilePage;
+    rootPage = ContactPage;
     pages: Array<{title: string, component: any}>;
     @ViewChild(Nav) nav: Nav;
 
@@ -31,6 +32,7 @@ export class MyApp {
             {title: 'd3', component: D3Page},
             {title: 'iframe', component: IframePage},
             {title: 'file', component: FilePage},
+            {title: 'nfc', component: NfcPage},
             {title: 'test', component: ContactPage},
         ];
     }
