@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {NavController} from "ionic-angular";
+import {IonicPage, NavController} from "ionic-angular";
 declare let d3: any;
 /*
  Generated class for the D3 page.
@@ -7,6 +7,7 @@ declare let d3: any;
  See http://ionicframework.com/docs/v2/components/#navigation for more info on
  Ionic pages and navigation.
  */
+@IonicPage()
 @Component({
     selector: 'page-d3',
     templateUrl: 'd3.html'

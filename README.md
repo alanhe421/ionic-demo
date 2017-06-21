@@ -18,8 +18,14 @@ ionic serve
 # 添加平台
 ionic platform add android
 
+# 构建平台下项目
+$ ionic cordova build <platform>
+
+# 生成图标图片，icon为512*512px,splash为2732*2732px
+$ ionic cordova resources
+
 # 真机运行
-ionic run android
+$ ionic cordova run android
 
 ```
 

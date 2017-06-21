@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {NavController} from 'ionic-angular';
+import {IonicPage, NavController} from 'ionic-angular';
 
 /*
  Generated class for the More page.
@@ -7,6 +7,7 @@ import {NavController} from 'ionic-angular';
  See http://ionicframework.com/docs/v2/components/#navigation for more info on
  Ionic pages and navigation.
  */
+@IonicPage()
 @Component({
     selector: 'page-more',
     templateUrl: 'more.html'

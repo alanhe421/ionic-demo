@@ -1,0 +1,18 @@
+import {NgModule} from "@angular/core";
+import {IonicPageModule} from "ionic-angular";
+import {IframePage} from "./iframe";
+import {ContactPage} from "./contact";
+
+@NgModule({
+    declarations: [
+        ContactPage,
+    ],
+    imports: [
+        IonicPageModule.forChild(ContactPage),
+    ],
+    exports: [
+        ContactPage
+    ]
+})
+export class ContactPageModule {
+}

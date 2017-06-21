@@ -21,6 +21,7 @@
     "@angular/http": "4.1.0",
     "@angular/platform-browser": "4.1.0",
     "@angular/platform-browser-dynamic": "4.1.0",
+    "@ionic-native/barcode-scanner": "^3.12.1",
     "@ionic-native/core": "3.6.1",
     "@ionic-native/file": "^3.6.1",
     "@ionic-native/in-app-browser": "3.6.1",

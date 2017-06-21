@@ -1,5 +1,6 @@
 import {Component} from "@angular/core";
 import {File} from "@ionic-native/file";
+import {IonicPage} from "ionic-angular";
 
 /**
  * Generated class for the File page.
@@ -7,6 +8,7 @@ import {File} from "@ionic-native/file";
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
+@IonicPage()
 @Component({
     selector: 'page-file',
     templateUrl: 'file.html',

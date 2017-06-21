@@ -1,5 +1,5 @@
 import {Component, ElementRef, ViewChild} from '@angular/core';
-import {NavController} from 'ionic-angular';
+import {IonicPage, NavController} from 'ionic-angular';
 declare let echarts;
 /*
  Generated class for the Echarts page.
@@ -7,6 +7,7 @@ declare let echarts;
  See http://ionicframework.com/docs/v2/components/#navigation for more info on
  Ionic pages and navigation.
  */
+@IonicPage()
 @Component({
     selector: 'page-echarts',
     templateUrl: 'echarts.html'
