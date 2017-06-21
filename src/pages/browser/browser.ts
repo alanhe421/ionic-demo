@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {Component} from "@angular/core";
+import {IonicPage, NavController, NavParams} from "ionic-angular";
 import {InAppBrowser} from "@ionic-native/in-app-browser";
 
 /**
@@ -10,17 +10,17 @@ import {InAppBrowser} from "@ionic-native/in-app-browser";
  */
 @IonicPage()
 @Component({
-  selector: 'page-browser',
-  templateUrl: 'browser.html',
+    selector: 'page-browser',
+    templateUrl: 'browser.html',
 })
 export class BrowserPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,private iab: InAppBrowser) {
-  }
+    constructor(public navCtrl: NavController, public navParams: NavParams, private iab: InAppBrowser) {
+    }
 
-  ionViewDidLoad() {
-    const browser = this.iab.create('http://1991421.cn');
-    console.log('ionViewDidLoad BrowserPage');
-  }
+    ionViewDidLoad() {
+        this.iab.create('http://1991421.cn');
+        console.log('ionViewDidLoad BrowserPage');
+    }
 
 }

@@ -38,9 +38,17 @@ export class ScannerPage {
             disableAnimations: true, // iOS
             disableSuccessBeep: false // iOS
         }).then((barcodeData) => {
-
+            if (barcodeData.cancelled == true) {
+                // barcode found
+                // type of barcode is stored in result.format
+                // barcode data is stored in result.text
+                console.log(barcodeData.text);
+            } else {
+                console.log('barcode scanner was cancelled by user');
+                // barcode scanner was cancelled by user
+            }
         }, (err) => {
-            // An error occurred
+            console.log("An error happened -> " + err);
         });
     }
 }

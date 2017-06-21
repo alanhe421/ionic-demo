@@ -3,13 +3,7 @@ import {Nav, Platform} from "ionic-angular";
 import {UtilService} from "../providers/util.service";
 import {StatusBar} from "@ionic-native/status-bar";
 import {SplashScreen} from "@ionic-native/splash-screen";
-import {EchartsPage} from "../pages/echarts/echarts";
-import {D3Page} from "../pages/d3/d3";
-import {IframePage} from "../pages/iframe/iframe";
 import {ContactPage} from "../pages/contact/contact";
-import {FilePage} from "../pages/file/file";
-import {NfcPage} from "../pages/nfc/nfc";
-import {BrowserPage} from "../pages/browser/browser";
 
 @Component({
     templateUrl: `app.component.html`
